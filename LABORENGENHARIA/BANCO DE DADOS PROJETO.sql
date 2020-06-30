@@ -11,9 +11,10 @@ senhaUsuario varchar(20) not null,
 telefoneUsuario varchar(20) not null,
 emailUsuario varchar(40)not null);
 
-select * from tbUsuario;
-
-drop table tbUsuario;
 
 insert into tbUsuario (codigoUsuario, nomeUsuario, loginUsuario, senhaUsuario, telefoneUsuario, emailUsuario) 
 values (001,'Mateus','matlife',1234,945612405,'mateuscan42@gmail.com');
+
+ALTER TABLE `tbusuario`
+ MODIFY `codigoUsuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+ COMMIT;
